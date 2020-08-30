@@ -17,7 +17,16 @@ class Person:
 x = Person("Emmanuel"," Idehen")
 x.printname()
         
-
+class Car(Person):
+    def __init__(self, model, year):
+        self.carmodel = model
+        self.caryear = year
+       
+    def carprintname(self):
+        print(self.carmodel, self.caryear)
+        
+y = Car("Toyota", " 2006")
+y.carprintname()
 
 
         
